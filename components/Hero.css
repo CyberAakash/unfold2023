@@ -1,0 +1,25 @@
+.container {
+  max-width: calc(1600px - var(--margin) * 2);
+}
+
+.animate-homepage-image-tracks {
+  animation: homepage-hero-image-tracks 1s ease-out forwards;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: homepage-hero-image-tracks;
+  animation-timeline: auto;
+  animation-range-start: normal;
+  animation-range-end: normal;
+}
+
+@keyframes homepage-hero-image-tracks {
+  100% {
+    opacity: 1;
+    transform: translate3d(0, -72px, 0);
+  }
+}
