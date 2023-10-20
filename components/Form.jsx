@@ -14,6 +14,7 @@ import {
   BeatLoader,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
+import Web3 from "web3"; 
 
 const Form = () => {
   // let [value, setValue] = useState("");
@@ -26,30 +27,219 @@ const Form = () => {
   let [date, setDate] = useState("");
   let [desc, setDesc] = useState("");
 
-  const weatherXDCBalance = (ecocontract) => {
-    $("#weatherDefiXDCBalance").on("click", async (e) => {
-      e.preventDefault();
-      const rate = await ecocontract.methods
-        .getXDCBalance()
-        .call()
-        .then((res) => {
-          const xdc = web3.utils.fromWei(res, "ether");
-          console.log(xdc);
-        });
-    });
-  };
+    const handleSubmit = async () => {
+      const web3 = new Web3(window.ethereum); // Initialize web3
+      try {
+        await window.ethereum.enable();
+        const accounts = await web3.eth.getAccounts();
 
-  const incidentReportApp = async () => {
-    const web3 = await loadWeb3();
-    console.log("Web3", web3);
-    const accounts = await web3.eth.getAccounts();
-    console.log("accounts", accounts);
-    console.log("Web3", accounts);
-    const farmcontract = await getFarmChainContract(web3); //Crowdsale Contract
-    console.log("farmcontract", farmcontract);
-    submitGetData(farmcontract, accounts); // should be called by customer
-    // addComp();
-  };
+        // Replace with the address and ABI of your smart contract
+        const contractAddress = "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4";
+        const contractABI = [
+          {
+            inputs: [
+              {
+                internalType: "string",
+                name: "_aadhar",
+                type: "string",
+              },
+              {
+                internalType: "string",
+                name: "_category",
+                type: "string",
+              },
+              {
+                internalType: "string",
+                name: "_country",
+                type: "string",
+              },
+              {
+                internalType: "string",
+                name: "_state",
+                type: "string",
+              },
+              {
+                internalType: "string",
+                name: "_city",
+                type: "string",
+              },
+              {
+                internalType: "string",
+                name: "_zipcode",
+                type: "string",
+              },
+              {
+                internalType: "string",
+                name: "_date",
+                type: "string",
+              },
+              {
+                internalType: "string",
+                name: "_desc",
+                type: "string",
+              },
+            ],
+            name: "addComplaint",
+            outputs: [],
+            stateMutability: "nonpayable",
+            type: "function",
+          },
+          {
+            inputs: [],
+            stateMutability: "nonpayable",
+            type: "constructor",
+          },
+          {
+            inputs: [],
+            name: "fetchAllComplaints",
+            outputs: [
+              {
+                components: [
+                  {
+                    internalType: "string",
+                    name: "aadhar",
+                    type: "string",
+                  },
+                  {
+                    internalType: "string",
+                    name: "category",
+                    type: "string",
+                  },
+                  {
+                    internalType: "string",
+                    name: "country",
+                    type: "string",
+                  },
+                  {
+                    internalType: "string",
+                    name: "state",
+                    type: "string",
+                  },
+                  {
+                    internalType: "string",
+                    name: "city",
+                    type: "string",
+                  },
+                  {
+                    internalType: "string",
+                    name: "zipcode",
+                    type: "string",
+                  },
+                  {
+                    internalType: "string",
+                    name: "date",
+                    type: "string",
+                  },
+                  {
+                    internalType: "string",
+                    name: "desc",
+                    type: "string",
+                  },
+                ],
+                internalType: "struct ComplaintContract.Complaint[]",
+                name: "",
+                type: "tuple[]",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+          {
+            inputs: [
+              {
+                internalType: "uint256",
+                name: "",
+                type: "uint256",
+              },
+            ],
+            name: "idToComplaints",
+            outputs: [
+              {
+                internalType: "string",
+                name: "aadhar",
+                type: "string",
+              },
+              {
+                internalType: "string",
+                name: "category",
+                type: "string",
+              },
+              {
+                internalType: "string",
+                name: "country",
+                type: "string",
+              },
+              {
+                internalType: "string",
+                name: "state",
+                type: "string",
+              },
+              {
+                internalType: "string",
+                name: "city",
+                type: "string",
+              },
+              {
+                internalType: "string",
+                name: "zipcode",
+                type: "string",
+              },
+              {
+                internalType: "string",
+                name: "date",
+                type: "string",
+              },
+              {
+                internalType: "string",
+                name: "desc",
+                type: "string",
+              },
+            ],
+            stateMutability: "view",
+            type: "function",
+          },
+        ];
+
+        const contract = new web3.eth.Contract(contractABI, contractAddress);
+
+        // Send data to the smart contract
+        await contract.methods
+          .addComplaint(aadhar.toString(), category, country, state, city, zipcode.toString(), date, desc /* and other form fields */)
+          .send({ from: accounts[0] });
+
+        alert("Complaint submitted successfully!");
+      } catch (error) {
+        console.error(error);
+        alert(
+          "Failed to submit complaint. Please check your wallet and try again."
+        );
+      }
+    };
+
+  // const weatherXDCBalance = (ecocontract) => {
+  //   $("#weatherDefiXDCBalance").on("click", async (e) => {
+  //     e.preventDefault();
+  //     const rate = await ecocontract.methods
+  //       .getXDCBalance()
+  //       .call()
+  //       .then((res) => {
+  //         const xdc = web3.utils.fromWei(res, "ether");
+  //         console.log(xdc);
+  //       });
+  //   });
+  // };
+
+  // const incidentReportApp = async () => {
+  //   const web3 = await loadWeb3();
+  //   console.log("Web3", web3);
+  //   const accounts = await web3.eth.getAccounts();
+  //   console.log("accounts", accounts);
+  //   console.log("Web3", accounts);
+  //   const farmcontract = await getFarmChainContract(web3); //Crowdsale Contract
+  //   console.log("farmcontract", farmcontract);
+  //   submitGetData(farmcontract, accounts); // should be called by customer
+  //   // addComp();
+  // };
 
   // useEffect(async () => {
   //   incidentReportApp();
@@ -57,10 +247,7 @@ const Form = () => {
 
   return (
     <>
-      <FormControl
-        className="grid grid-cols-2 gap-6 place-items-start place-content-center p-10 shadow-lg bg-bg2 text-white w-[65%] m-3 relative overflow-hidden"
-        _action=""
-      >
+      <FormControl className="grid grid-cols-2 gap-6 place-items-start place-content-center p-10 shadow-lg bg-bg2 text-white w-[65%] m-3 relative overflow-hidden">
         <Text className="text-white">Aadhar Number</Text>
         <NumberInput
           value={aadhar}
@@ -185,7 +372,8 @@ const Form = () => {
           name="submit"
           id="complainBtn"
           value="Submit"
-          onSubmit={() => {}}
+          // onSubmit={() => {}}
+          onClick={handleSubmit}
           className="col-span-2 w-full bg-primary text-white rounded-tl-lg rounded-br-lg"
           //   isLoading
           loadingText="SubmitReport"
