@@ -38,11 +38,11 @@ const Hero = () => {
           <div className="min-h-xl min-w-full inline-block"></div>
           <Link
             // href="/report_submit"
-            href="/store_data_in_wallet"
+            href="/report_submit"
             alt=""
             className="p-4 relative z-50 flex items-center justify-center text-center min-w-[70%] bg-primary text-bg2 rounded-tl-lg rounded-br-lg cursor-pointer"
           >
-            Submit a incident
+            Login Now
           </Link>
 
           {/* <form className="border-2 border-black rounded-3xl p-4 flex items-center justify-center relative">
