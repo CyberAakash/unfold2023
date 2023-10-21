@@ -28,13 +28,15 @@ const Form = () => {
   let [desc, setDesc] = useState("");
 
     const handleSubmit = async () => {
+      // console.log(date);
+      // alert(aadhar + ',' + category + ',' + country + ',' + state + ',' + city + ',' + zipcode + ',' + date + ',' + desc)
       const web3 = new Web3(window.ethereum); // Initialize web3
       try {
         await window.ethereum.enable();
         const accounts = await web3.eth.getAccounts();
 
         // Replace with the address and ABI of your smart contract
-        const contractAddress = "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4";
+        const contractAddress = "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"; //0xd9145CCE52D386f254917e481eB44e9943F39138
         const contractABI = [
           {
             inputs: [
@@ -204,7 +206,16 @@ const Form = () => {
 
         // Send data to the smart contract
         await contract.methods
-          .addComplaint(aadhar.toString(), category, country, state, city, zipcode.toString(), date, desc /* and other form fields */)
+          .addComplaint(
+            aadhar.toString(),
+            category,
+            country,
+            state,
+            city,
+            zipcode.toString(),
+            date,
+            desc
+          )
           .send({ from: accounts[0] });
 
         alert("Complaint submitted successfully!");

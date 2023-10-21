@@ -15,14 +15,14 @@ const Dashboard = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-start gap-10 overflow-hidden relative w-screen min-h-screen">
-        <div className="flex flex-col gap-14 justify-start items-center bg-white text-bg1 w-screen relative min-h-screen">
+        <div className="flex flex-col gap-14 justify-start items-center bg-zinc-200 text-bg1 w-screen relative min-h-screen">
           {/* <div className="p-12 flex-1">Status: {status}</div> */}
 
           <div className="max-w-7xl mx-aut text-center py-12 px-4 sm:px-6 lg:py-6 lg:px-8 flex-6">
             {!wallet ? (
-              <div className="flex flex-col items-center justify-center mt-60 w-full gap-6 p-16 shadow-2xl">
+              <div className="flex flex-col items-center justify-center mt-60 w-full gap-6 p-16 shadow-2xl bg-bg1 text-white rounded-2xl">
                 <h2 className="font-semibold text-2xl">Connect to Wallet Now</h2>
-                <SignInButton className="inline-flex items-center justify-center  px-5 py-3 border border-transparent text-2xl font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+                <SignInButton className="inline-flex items-center justify-center  px-5 py-3 border border-transparent text-2xl font-medium rounded-md text-white bg-primary hover:bg-primary/80">
                   Connect
                 </SignInButton>
               </div>
