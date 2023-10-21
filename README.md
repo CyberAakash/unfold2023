@@ -1,11 +1,10 @@
-
 # Socialized Crime Reporting DApp
 
 We provide a safe, private, and anonymous platform for reporting and verifying criminal incidences with our Socialized Crime Reporting DApp. It makes use of zkLogin to provide a smooth and intuitive authentication process and the Avalanche Network to safeguard data.
 
 # How it works
 
-###  User Authentication with zkLogin:
+### User Authentication with zkLogin:
 
 ###### Users can sign up using their current Web2 login credentials from Twitch and Google, among other providers. This makes it unnecessary to keep track of or recall private keys, which facilitates rapid and simple authentication.
 
@@ -36,14 +35,6 @@ We provide a safe, private, and anonymous platform for reporting and verifying c
 ### Security and Compliance:
 
 ###### User data is safeguarded by stringent security protocols and frequent audits. When it comes to privacy and crime reporting laws, the DApp abides by them.
-
-
-
-
-
-
-
-
 
 # Run Locally
 
@@ -81,35 +72,85 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Tech Stack
+
+- Next JS
+- TailwindCSS
+- SUI zklogin
+- Metamask
+- Avalanche
+- Blockchain
 
 ## Demo
 
-https://youtu.be/J1ZpYeqoCUw 
-
+https://youtu.be/J1ZpYeqoCUw
 
 ## Screenshots
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53272574062/in/dateposted-public/" title="a1"><img src="https://live.staticflickr.com/65535/53272574062_04b3d53e91_w.jpg" width="400" height="250" alt="a1"/></a>
+<p float="left">
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53272574062/in/dateposted-public/" title="a1"><img src="https://live.staticflickr.com/65535/53272574062_04b3d53e91_w.jpg" width="250" height="250" alt="a1"/></a>&nbsp; &nbsp;<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273745523/in/dateposted-public/" title="a2"><img src="https://live.staticflickr.com/65535/53273745523_3425b83f16_w.jpg" width="250" height="250" alt="a2"/></a>&nbsp; &nbsp;<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273464521/in/dateposted-public/" title="a3"><img src="https://live.staticflickr.com/65535/53273464521_368abbe49e_w.jpg" width="250" height="250" alt="a3"/></a>&nbsp; &nbsp;<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273819434/in/dateposted-public/" title="a4"><img src="https://live.staticflickr.com/65535/53273819434_e0f0c4e789_w.jpg" width="250" height="250" alt="a4"/></a>&nbsp; &nbsp;<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53272574222/in/dateposted-public/" title="a5"><img src="https://live.staticflickr.com/65535/53272574222_8a38ecdfe8_w.jpg" width="250" height="250" alt="a5"/></a>&nbsp; &nbsp;<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273745723/in/dateposted-public/" title="a6"><img src="https://live.staticflickr.com/65535/53273745723_d8b4191fb7_w.jpg" width="250" height="250" alt="a6"/></a>&nbsp; &nbsp;<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273928610/in/dateposted-public/" title="a7"><img src="https://live.staticflickr.com/65535/53273928610_012e3595fd_w.jpg" width="250" height="250" alt="a7"/></a>&nbsp; &nbsp;<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53272574162/in/dateposted-public/" title="a8"><img src="https://live.staticflickr.com/65535/53272574162_a3b5659679_w.jpg" width="250" height="250" alt="a8"/></a>&nbsp; &nbsp;<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273819154/in/dateposted-public/" title="a10"><img src="https://live.staticflickr.com/65535/53273819154_0ed1c35952_w.jpg" width="250" height="250" alt="a10"/></a>&nbsp; &nbsp;<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273745373/in/dateposted-public/" title="a11"><img src="https://live.staticflickr.com/65535/53273745373_50063f30ae_w.jpg" width="250" height="250" alt="a11"/></a>&nbsp; &nbsp;<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273819374/in/dateposted-public/" title="a12"><img src="https://live.staticflickr.com/65535/53273819374_0e32c2f5d7_w.jpg" width="250" height="250" alt="a12"/></a>&nbsp; &nbsp;<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53272573707/in/dateposted-public/" title="a13"><img src="https://live.staticflickr.com/65535/53272573707_7a841fe52a_w.jpg" width="250" height="250" alt="a13"/></a>
+</p>
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273745523/in/dateposted-public/" title="a2"><img src="https://live.staticflickr.com/65535/53273745523_3425b83f16_w.jpg" width="400" height="250" alt="a2"/></a>
+## 🔗 Links
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273464521/in/dateposted-public/" title="a3"><img src="https://live.staticflickr.com/65535/53273464521_368abbe49e_w.jpg" width="400" height="250" alt="a3"/></a>
+###### Nithin R
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273819434/in/dateposted-public/" title="a4"><img src="https://live.staticflickr.com/65535/53273819434_e0f0c4e789_w.jpg" width="400" height="250" alt="a4"/></a>
+<div align="left">
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53272574222/in/dateposted-public/" title="a5"><img src="https://live.staticflickr.com/65535/53272574222_8a38ecdfe8_w.jpg" width="400" height="250" alt="a5"/></a>
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/nithin__07/)
+[![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/cyberaakash)
+[![Instagram Badge](https://img.shields.io/badge/-Instagram-e4405f?style=flat-square&logo=Instagram&logoColor=white)](https://instagram.com/Nithin._.06/)
+[![Whatsapp Badge](https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/919384296895)
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273745723/in/dateposted-public/" title="a6"><img src="https://live.staticflickr.com/65535/53273745723_d8b4191fb7_w.jpg" width="400" height="250" alt="a6"/></a>
+</div>
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273928610/in/dateposted-public/" title="a7"><img src="https://live.staticflickr.com/65535/53273928610_012e3595fd_w.jpg" width="400" height="250" alt="a7"/></a>
+###### Sathiya Geerthi S B
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53272574162/in/dateposted-public/" title="a8"><img src="https://live.staticflickr.com/65535/53272574162_a3b5659679_w.jpg" width="400" height="250" alt="a8"/></a>
+<div align="left">
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273819154/in/dateposted-public/" title="a10"><img src="https://live.staticflickr.com/65535/53273819154_0ed1c35952_w.jpg" width="400" height="250" alt="a10"/></a>
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/cyberaakash/)
+[![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/cyberaakash)
+[![Instagram Badge](https://img.shields.io/badge/-Instagram-e4405f?style=flat-square&logo=Instagram&logoColor=white)](https://instagram.com/cyberaakash/)
+[![Whatsapp Badge](https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/919384296895)
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273745373/in/dateposted-public/" title="a11"><img src="https://live.staticflickr.com/65535/53273745373_50063f30ae_w.jpg" width="400" height="250" alt="a11"/></a>
+</div>
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53273819374/in/dateposted-public/" title="a12"><img src="https://live.staticflickr.com/65535/53273819374_0e32c2f5d7_w.jpg" width="400" height="250" alt="a12"/></a>
+###### Gowtham Babu
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/199207119@N02/53272573707/in/dateposted-public/" title="a13"><img src="https://live.staticflickr.com/65535/53272573707_7a841fe52a_w.jpg" width="400" height="250" alt="a13"/></a>
+<div align="left">
+
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/cyberaakash/)
+[![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/cyberaakash)
+[![Instagram Badge](https://img.shields.io/badge/-Instagram-e4405f?style=flat-square&logo=Instagram&logoColor=white)](https://instagram.com/cyberaakash/)
+[![Whatsapp Badge](https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/919384296895)
+
+</div>
+
+
+###### Aakash T
+
+<div align="left">
+
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/cyberaakash/)
+[![Twitter Badge](https://img.shields.io/badge/-Twitter-00acee?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/cyberaakash)
+[![Instagram Badge](https://img.shields.io/badge/-Instagram-e4405f?style=flat-square&logo=Instagram&logoColor=white)](https://instagram.com/cyberaakash/)
+[![Whatsapp Badge](https://img.shields.io/badge/WhatsApp-25D366?style=flat-square&logo=whatsapp&logoColor=white)](https://wa.me/919384296895)
+
+</div>
+
+<br />
+
+# Feedback
+
+If you have any feedback, please reach out to us at aakashvnth@gmail.com
+
+<br /><br />
+
+<!-- --- -->
+
+<div align="center">
+
+# May be giving ❤️ is kinda fun
+
+</div>  
 
