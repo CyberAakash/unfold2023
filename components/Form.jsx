@@ -227,35 +227,6 @@ const Form = () => {
       }
     };
 
-  // const weatherXDCBalance = (ecocontract) => {
-  //   $("#weatherDefiXDCBalance").on("click", async (e) => {
-  //     e.preventDefault();
-  //     const rate = await ecocontract.methods
-  //       .getXDCBalance()
-  //       .call()
-  //       .then((res) => {
-  //         const xdc = web3.utils.fromWei(res, "ether");
-  //         console.log(xdc);
-  //       });
-  //   });
-  // };
-
-  // const incidentReportApp = async () => {
-  //   const web3 = await loadWeb3();
-  //   console.log("Web3", web3);
-  //   const accounts = await web3.eth.getAccounts();
-  //   console.log("accounts", accounts);
-  //   console.log("Web3", accounts);
-  //   const farmcontract = await getFarmChainContract(web3); //Crowdsale Contract
-  //   console.log("farmcontract", farmcontract);
-  //   submitGetData(farmcontract, accounts); // should be called by customer
-  //   // addComp();
-  // };
-
-  // useEffect(async () => {
-  //   incidentReportApp();
-  // }, []);
-
   return (
     <>
       <FormControl className="grid grid-cols-2 gap-6 place-items-start place-content-center p-10 shadow-lg bg-bg2 text-white w-[65%] m-3 relative overflow-hidden">
