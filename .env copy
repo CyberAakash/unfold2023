@@ -1,0 +1,3 @@
+CLIENT_ID = "777526474439-1r11tappeibjt10f7k1cgtmc0fch8neg.apps.googleusercontent.com"
+CLIENT_SECRET = "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"
+REDIRECT_URL = "https://sui.io"
